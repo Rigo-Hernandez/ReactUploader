@@ -2,7 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <img src="./images/ReactUpload.gif">
 
-
+```bash
+Uploaded files are stored in ./client/public/uploads
+```
 <img src="./images/FilepathUpload.png">
 ## Available Scripts
 
