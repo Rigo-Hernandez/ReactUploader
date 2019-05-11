@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Uploaded files are stored in ./client/public/uploads
 ```
 <img src="./images/FilepathUpload.png" width='600' height='440'>
+
+
 ## Available Scripts
 
 In the project directory, you can run:
