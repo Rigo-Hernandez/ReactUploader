@@ -1,18 +1,18 @@
-const express = require('express');
-const fileupload = require('express-fileupload');
+const express = require("express");
+const fileupload = require("express-fileupload");
 
 const app = express();
 
 app.use(fileupload());
 
 //upload Endpoint
-app.post('/upload', (req, res) => {
+app.post("/upload", (req, res) => {
   if (req.files === null) {
-    return res.status(400).json({ msg: 'No file has been uploaded.' });
+    return res.status(400).json({ msg: "No file has been uploaded." });
   }
   const file = req.files.file;
 
-  file.mv(`${__dirname}/client/public/uploads/${file.name}`, err => {
+  file.mv(`${__dirname}/client/public/uploads/${file.name}`, (err) => {
     if (err) {
       console.error(err);
       return res.status(500).send(err);
@@ -21,4 +21,4 @@ app.post('/upload', (req, res) => {
   });
 });
 
-app.listen(5000, () => console.log('server started'));
+app.listen(5000, () => console.log("server started"));
